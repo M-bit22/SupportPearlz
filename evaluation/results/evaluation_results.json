@@ -1,0 +1,42 @@
+[
+    {
+        "question": "What are the customer support working hours?",
+        "generated_answer": "Our customer support team is available Monday through Friday, from 9:00 AM to 5:00 PM.",
+        "sources": [
+            "sample.txt"
+        ],
+        "answer_check": true,
+        "source_check": true,
+        "passed": true
+    },
+    {
+        "question": "How long does standard order processing take?",
+        "generated_answer": "Standard order processing takes 2 to 3 business days.",
+        "sources": [
+            "sample.txt"
+        ],
+        "answer_check": true,
+        "source_check": true,
+        "passed": true
+    },
+    {
+        "question": "What is the refund policy?",
+        "generated_answer": "Customers can request a refund within 14 days of receiving their order, provided the product meets the refund conditions.",
+        "sources": [
+            "sample.txt"
+        ],
+        "answer_check": true,
+        "source_check": true,
+        "passed": true
+    },
+    {
+        "question": "Do you offer free international shipping?",
+        "generated_answer": "I'm sorry, but I couldn't find that information in our knowledge base.",
+        "sources": [
+            "sample.txt"
+        ],
+        "answer_check": true,
+        "source_check": true,
+        "passed": true
+    }
+]

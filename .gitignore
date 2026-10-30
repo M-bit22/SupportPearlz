@@ -1,0 +1,29 @@
+.env
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+data/vector_store/
+.pytest_cache/
+logs/
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Generated vector database
+data/vector_store/
+
+# Logs and temporary files
+logs/
+*.log
+.DS_Store

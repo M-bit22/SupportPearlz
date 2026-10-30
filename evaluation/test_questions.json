@@ -1,0 +1,143 @@
+
+[
+  {
+    "question": "What are the customer support working hours?",
+    "expected_answer": "Monday through Friday",
+    "expected_sources": ["customer_support.txt", "sample.txt"],
+    "expected_to_be_unanswered": false,
+    "category": "answerable"
+  },
+  {
+    "question": "How long does standard order processing take?",
+    "expected_answer": "2 to 3",
+    "expected_sources": ["shipping_policy.docx", "customer_support.txt", "sample.txt"],
+    "expected_to_be_unanswered": false,
+    "category": "answerable"
+  },
+  {
+    "question": "What is the refund request period?",
+    "expected_answer": "14 days",
+    "expected_sources": ["refund_policy.pdf", "customer_support.txt", "sample.txt"],
+    "expected_to_be_unanswered": false,
+    "category": "answerable"
+  },
+  {
+    "question": "Can customers request a refund after receiving an order?",
+    "expected_answer": "14 days",
+    "expected_sources": ["refund_policy.pdf", "customer_support.txt", "sample.txt"],
+    "expected_to_be_unanswered": false,
+    "category": "answerable"
+  },
+  {
+    "question": "Are refund requests subject to conditions?",
+    "expected_answer": "conditions",
+    "expected_sources": ["refund_policy.pdf", "sample.txt"],
+    "expected_to_be_unanswered": false,
+    "category": "answerable"
+  },
+  {
+    "question": "Does the knowledge base specify detailed refund eligibility criteria?",
+    "expected_answer": "not specified",
+    "expected_sources": ["refund_policy.pdf"],
+    "expected_to_be_unanswered": false,
+    "category": "partial_answer"
+  },
+  {
+    "question": "Is there a separate policy for damaged or defective items?",
+    "expected_answer": "not documented",
+    "expected_sources": ["refund_policy.pdf"],
+    "expected_to_be_unanswered": false,
+    "category": "partial_answer"
+  },
+  {
+    "question": "Does the knowledge base explain refund processing times?",
+    "expected_answer": "not specified",
+    "expected_sources": ["refund_policy.pdf"],
+    "expected_to_be_unanswered": false,
+    "category": "partial_answer"
+  },
+  {
+    "question": "How many days does standard order processing take?",
+    "expected_answer": "2 to 3",
+    "expected_sources": ["shipping_policy.docx", "sample.txt"],
+    "expected_to_be_unanswered": false,
+    "category": "answerable"
+  },
+  {
+    "question": "Are order processing time and total delivery time the same?",
+    "expected_answer": "not the same",
+    "expected_sources": ["shipping_policy.docx"],
+    "expected_to_be_unanswered": false,
+    "category": "partial_answer"
+  },
+  {
+    "question": "Do you offer free international shipping?",
+    "expected_answer": "couldn't find that information",
+    "expected_sources": ["shipping_policy.docx"],
+    "expected_to_be_unanswered": true,
+    "category": "unanswerable"
+  },
+  {
+    "question": "What are the international shipping charges?",
+    "expected_answer": "couldn't find that information",
+    "expected_sources": ["shipping_policy.docx"],
+    "expected_to_be_unanswered": true,
+    "category": "unanswerable"
+  },
+  {
+    "question": "What is the guaranteed delivery time?",
+    "expected_answer": "couldn't find that information",
+    "expected_sources": ["shipping_policy.docx"],
+    "expected_to_be_unanswered": true,
+    "category": "unanswerable"
+  },
+  {
+    "question": "Can I track my order?",
+    "expected_answer": "couldn't find that information",
+    "expected_sources": ["shipping_policy.docx"],
+    "expected_to_be_unanswered": true,
+    "category": "unanswerable"
+  },
+  {
+    "question": "Can I cancel or modify an order after placing it?",
+    "expected_answer": "couldn't find that information",
+    "expected_sources": ["shipping_policy.docx"],
+    "expected_to_be_unanswered": true,
+    "category": "unanswerable"
+  },
+  {
+    "question": "What is the customer support phone number?",
+    "expected_answer": "couldn't find that information",
+    "expected_sources": ["customer_support.txt"],
+    "expected_to_be_unanswered": true,
+    "category": "unanswerable"
+  },
+  {
+    "question": "What is the official customer support email address?",
+    "expected_answer": "couldn't find that information",
+    "expected_sources": ["customer_support.txt"],
+    "expected_to_be_unanswered": true,
+    "category": "unanswerable"
+  },
+  {
+    "question": "Is customer support available on weekends?",
+    "expected_answer": "couldn't find that information",
+    "expected_sources": ["customer_support.txt"],
+    "expected_to_be_unanswered": true,
+    "category": "unanswerable"
+  },
+  {
+    "question": "What is the refund policy for opened products?",
+    "expected_answer": "not documented",
+    "expected_sources": ["refund_policy.pdf"],
+    "expected_to_be_unanswered": false,
+    "category": "partial_answer"
+  },
+  {
+    "question": "What should a customer do if an item is missing?",
+    "expected_answer": "not documented",
+    "expected_sources": ["refund_policy.pdf"],
+    "expected_to_be_unanswered": false,
+    "category": "partial_answer"
+  }
+]

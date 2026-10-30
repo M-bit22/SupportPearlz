@@ -1,0 +1,14 @@
+SupportPearlz Customer Support Knowledge Base
+
+Our customer support team is available Monday through Friday,
+from 9:00 AM to 5:00 PM.
+
+Customers can contact support through support@example.com.
+
+Standard order processing takes 2 to 3 business days.
+
+Customers can request a refund within 14 days of receiving
+their order, provided the product meets the refund conditions.
+
+For technical support, customers should provide their order
+number and a description of the issue.

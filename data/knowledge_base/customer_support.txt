@@ -1,0 +1,25 @@
+Pearl Store — Customer Support Reference
+Knowledge-base document for SupportPearlz
+
+SUPPORT HOURS
+The customer support team is available Monday through Friday, from 9:00 AM to 5:00 PM.
+
+ORDER PROCESSING
+Standard order processing takes 2–3 days. This is the processing estimate only; carrier transit time and total delivery time are not specified.
+
+REFUNDS
+Customers can request a refund within 14 days of receiving their order, provided the product meets the refund conditions. Detailed conditions are not listed in the supplied material.
+
+CONTACT AND ESCALATION
+A dedicated phone number, email address, WhatsApp number, and after-hours escalation procedure have not been provided. Do not invent contact details. For case-specific questions, direct customers to the store's official support channel.
+
+IMPORTANT KNOWLEDGE GAPS
+The supplied material does not specify:
+- Detailed refund eligibility conditions or exceptions.
+- A separate damaged/defective-item policy.
+- Refund processing time.
+- Shipping fees or international shipping availability.
+- Carrier transit times or guaranteed delivery dates.
+- Order cancellation or modification rules.
+
+The assistant must clearly state when these details are not documented and must not guess.
