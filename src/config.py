@@ -1,5 +1,5 @@
 
-"""Application configuration loaded from environment variables."""
+"""Application configuration loaded from environment variables and Streamlit secrets."""
 
 import os
 from pathlib import Path
@@ -10,20 +10,35 @@ from dotenv import load_dotenv
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BASE_DIR / ".env")
 
+
+def get_setting(name: str, default: str = "") -> str:
+    """Read Streamlit Cloud secrets first, then environment variables."""
+    try:
+        import streamlit as st
+
+        value = st.secrets.get(name)
+        if value is not None:
+            return str(value)
+    except Exception:
+        pass
+
+    return os.getenv(name, default)
+
+
 # API configuration
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
+GOOGLE_API_KEY = get_setting("GOOGLE_API_KEY")
 
 # Gemini models
-CHAT_MODEL = os.getenv("CHAT_MODEL", "gemini-2.5-flash")
-EMBEDDING_MODEL = os.getenv(
+CHAT_MODEL = get_setting("CHAT_MODEL", "gemini-3.8-flash")
+EMBEDDING_MODEL = get_setting(
     "EMBEDDING_MODEL",
     "models/gemini-embedding-001",
 )
 
 # RAG configuration
-CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "800"))
-CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "120"))
-TOP_K = int(os.getenv("TOP_K", "4"))
+CHUNK_SIZE = int(get_setting("CHUNK_SIZE", "800"))
+CHUNK_OVERLAP = int(get_setting("CHUNK_OVERLAP", "120"))
+TOP_K = int(get_setting("TOP_K", "4"))
 
 # Project paths
 KNOWLEDGE_BASE_DIR = BASE_DIR / "data" / "knowledge_base"
@@ -38,7 +53,7 @@ def validate_config() -> None:
     """Check that required configuration is available."""
     if not GOOGLE_API_KEY:
         raise ValueError(
-            "GOOGLE_API_KEY is missing. Add it to your .env file."
+            "GOOGLE_API_KEY is missing. Add it to .env or Streamlit Cloud Secrets."
         )
 
     if CHUNK_SIZE <= 0:
